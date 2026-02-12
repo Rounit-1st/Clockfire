@@ -20,3 +20,12 @@ Inside bash terminal of kafka
 kafka-console-consumer --topic test-topic --bootstrap-server localhost:9092
 ```
 
+
+### Producer for testing
+
+Inside bash terminal of kafka
+
+```bash
+kafka-console-producer --topic test-topic --bootstrap-server localhost:9092
+```
+

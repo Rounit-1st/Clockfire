@@ -3,10 +3,13 @@ import { Pool } from 'pg';
 
 dotenv.config();
 
+console.log(process.env.DB_USER, typeof process.env.DB_PASSWORD);
+
+
 export const pool = new Pool({
   host: process.env.DB_HOST,
   port: 5432,
-  user: process.enav.DB_USER,
+  user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
   max: parseInt(process.env.DB_POOL_MAX, 10) || 20,        // max connections
